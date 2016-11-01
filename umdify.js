@@ -202,7 +202,7 @@ var umdify = function(contents, moduleName) {
 	output += '  }\n';
 
 	if (requireStatements.varNames.length > 0) {
-		output += '}(this, function (\n' + requireStatements.varNames.join(',\n  ') + '\n) {';
+		output += '}(this, function (\n  ' + requireStatements.varNames.join(',\n  ') + '\n) {';
 	} else {
 		output += '}(this, function () {';
 	}
